@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://izikl.github.io/venture-open-data-comparison-tables/sitemap.xml
