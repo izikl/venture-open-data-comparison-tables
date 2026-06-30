@@ -1,0 +1,50 @@
+{
+  "routes": [
+    {
+      "route": "/word-blitz",
+      "rewrite": "/word-blitz/index.html"
+    },
+    {
+      "route": "/word-blitz/*",
+      "rewrite": "/word-blitz/index.html"
+    },
+    {
+      "route": "/snake",
+      "rewrite": "/snake/index.html"
+    },
+    {
+      "route": "/snake/*",
+      "rewrite": "/snake/index.html"
+    },
+    {
+      "route": "/memory",
+      "rewrite": "/memory/index.html"
+    },
+    {
+      "route": "/memory/*",
+      "rewrite": "/memory/index.html"
+    },
+    {
+      "route": "/snake-duel",
+      "rewrite": "/snake-duel/index.html"
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/index.html",
+      "statusCode": 200
+    }
+  },
+  "globalHeaders": {
+    "Cache-Control": "no-cache, no-store, must-revalidate",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
+  },
+  "mimeTypes": {
+    ".json": "application/json",
+    ".webmanifest": "application/manifest+json",
+    ".svg": "image/svg+xml"
+  }
+}
